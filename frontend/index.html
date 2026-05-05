@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TradeSense AI — Trading Research Terminal</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">TS</div>
+    <div class="logo-text">TradeSense AI<span>research terminal</span></div>
+  </div>
+  <div class="header-right">
+    <span class="badge badge-success"><span class="badge-dot"></span>LIVE</span>
+    <span class="badge badge-info">Governance ON</span>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-label">Live Market</div>
+      <button class="nav-btn" onclick="askQuick('What are the hottest sectors right now based on live data and which stocks should I watch?')">
+        <span class="icon-dot"></span>Hot sectors now
+      </button>
+      <button class="nav-btn" onclick="askQuick('Give me a full market overview with sector performance and recent news')">
+        <span class="icon-dot"></span>Market overview
+      </button>
+      <button class="nav-btn" onclick="askQuick('Find me small cap gainers in technology with strong momentum')">
+        <span class="icon-dot"></span>Small cap movers
+      </button>
+      <button class="nav-btn" onclick="askQuick('What is the current news driving the market today?')">
+        <span class="icon-dot"></span>Today's news
+      </button>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Watchlist</div>
+      <button class="nav-btn" onclick="askQuick('Analyze NVDA for a swing trade opportunity')">
+        <span class="ticker-tag">NVDA</span>Full analysis
+      </button>
+      <button class="nav-btn" onclick="askQuick('Analyze AAPL for a swing trade opportunity')">
+        <span class="ticker-tag">AAPL</span>Full analysis
+      </button>
+      <button class="nav-btn" onclick="askQuick('Analyze TSLA for a swing trade opportunity')">
+        <span class="ticker-tag">TSLA</span>Full analysis
+      </button>
+      <button class="nav-btn" onclick="askQuick('Analyze MSFT for a swing trade opportunity')">
+        <span class="ticker-tag">MSFT</span>Full analysis
+      </button>
+      <button class="nav-btn" onclick="askQuick('Analyze AMD for a swing trade opportunity')">
+        <span class="ticker-tag">AMD</span>Full analysis
+      </button>
+      <button class="nav-btn" onclick="askQuick('Analyze META for a swing trade opportunity')">
+        <span class="ticker-tag">META</span>Full analysis
+      </button>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Themed Research</div>
+      <button class="nav-btn" onclick="askQuick('Find best stocks based on current sector momentum and recent news')">
+        <span class="icon-dot"></span>Best plays now
+      </button>
+      <button class="nav-btn" onclick="askQuick('What are current AI infrastructure bottlenecks and which stocks benefit?')">
+        <span class="icon-dot"></span>AI infrastructure
+      </button>
+      <button class="nav-btn" onclick="askQuick('What power and energy stocks benefit from AI data center demand?')">
+        <span class="icon-dot"></span>Power and energy
+      </button>
+      <button class="nav-btn" onclick="askQuick('Find semiconductor stocks showing strong momentum based on live data')">
+        <span class="icon-dot"></span>Semiconductors
+      </button>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Strategy</div>
+      <button class="nav-btn" onclick="askQuick('Explain stage 2 breakout swing trade setup with current examples')">
+        <span class="icon-dot"></span>Stage 2 breakout
+      </button>
+      <button class="nav-btn" onclick="askQuick('What signals indicate a stock about to make a big move in 3-6 months?')">
+        <span class="icon-dot"></span>Big move signals
+      </button>
+      <button class="nav-btn" onclick="askQuick('How do I identify a short squeeze candidate?')">
+        <span class="icon-dot"></span>Short squeeze
+      </button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="main-header">
+      <div class="main-header-info">
+        <h2>Trading Research Assistant</h2>
+        <p>llama-3.3-70b · 7 tools · RAG · LangSmith</p>
+      </div>
+      <div class="tool-pills">
+        <span class="tool-pill">price</span>
+        <span class="tool-pill">technicals</span>
+        <span class="tool-pill">fundamentals</span>
+        <span class="tool-pill">screener</span>
+        <span class="tool-pill">news</span>
+        <span class="tool-pill">sectors</span>
+        <span class="tool-pill">RAG</span>
+      </div>
+    </div>
+
+    <div class="chat" id="chat">
+      <div class="message">
+        <div class="avatar ai">AI</div>
+        <div>
+          <div class="bubble ai">
+            Welcome to <strong>TradeSense AI</strong>. Enterprise-grade trading research with live market data, technical indicators, fundamental analysis, real-time sector performance, news, and dynamic stock screening.<br><br>
+            Try <strong>Hot sectors now</strong> on the left to see what's actually moving, or analyze any ticker.
+          </div>
+          <div class="timestamp">Ready</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="input-row">
+        <div class="input-wrapper">
+          <span class="input-prefix">$</span>
+          <input type="text" id="input"
+            placeholder="Enter a ticker or research question..."
+            onkeydown="if(event.key==='Enter') sendMessage()"/>
+        </div>
+        <button class="btn-primary" id="btn" onclick="sendMessage()">Analyze</button>
+      </div>
+      <div class="input-hints">
+        <span class="hint" onclick="setInput('What sectors are hot right now?')">Hot sectors</span>
+        <span class="hint" onclick="setInput('Analyze NVDA for swing trade')">NVDA swing trade</span>
+        <span class="hint" onclick="setInput('Find small cap gainers')">Small cap gainers</span>
+        <span class="hint" onclick="setInput('Today market news')">Today news</span>
+      </div>
+    </div>
+  </main>
+
+  <aside class="right-panel">
+    <div class="panel-section">
+      <div class="panel-title">Last Analysis</div>
+      <div class="ticker-display" id="last-ticker">—</div>
+      <div class="ticker-status" id="last-price">No analysis yet</div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-title">Signals</div>
+      <div id="signals-panel">
+        <div class="empty-state">Run an analysis to see signals</div>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-title">Active Tools</div>
+      <div class="tool-status">
+        <div class="tool-row"><span class="tool-name">stock_price</span><span class="status-active">LIVE</span></div>
+        <div class="tool-row"><span class="tool-name">technicals</span><span class="status-active">LIVE</span></div>
+        <div class="tool-row"><span class="tool-name">fundamentals</span><span class="status-active">LIVE</span></div>
+        <div class="tool-row"><span class="tool-name">sectors</span><span class="status-active">LIVE</span></div>
+        <div class="tool-row"><span class="tool-name">news</span><span class="status-active">LIVE</span></div>
+        <div class="tool-row"><span class="tool-name">screener</span><span class="status-active">LIVE</span></div>
+        <div class="tool-row"><span class="tool-name">rag_search</span><span class="status-active">ACTIVE</span></div>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-title">Governance</div>
+      <div class="gov-log" id="gov-log">
+        <span class="ok">[OK]</span> System initialized<br>
+        <span class="ok">[OK]</span> Guardrails active<br>
+        <span class="ok">[OK]</span> PII detection on<br>
+        <span class="ok">[OK]</span> Audit logging on<br>
+        <span class="ok">[OK]</span> LangSmith tracing<br>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-title">Session</div>
+      <div class="session-info">
+        <div class="info-row"><span class="info-key">ID</span><span class="info-value" id="session-display">—</span></div>
+        <div class="info-row"><span class="info-key">Queries</span><span class="info-value" id="query-count">0</span></div>
+        <div class="info-row"><span class="info-key">Model</span><span class="info-value">llama-3.3-70b</span></div>
+        <div class="info-row"><span class="info-key">Tools</span><span class="info-value">7 active</span></div>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

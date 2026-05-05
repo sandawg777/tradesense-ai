@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-dotenv
+yfinance
+pandas
+numpy
+langchain-groq
+langsmith
+langchain-classic
+langchain-community
+langchain-huggingface
+faiss-cpu
+sentence-transformers
+pydantic
+requests
+pytest

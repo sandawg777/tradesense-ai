@@ -1,0 +1,82 @@
+RSI (Relative Strength Index) measures momentum on a scale of 0-100. Above 70 is overbought, below 30 is oversold.
+MACD (Moving Average Convergence Divergence) shows trend direction and momentum. A bullish crossover occurs when MACD crosses above the signal line.
+Moving averages smooth price data. The 50-day and 200-day MAs are key levels. A golden cross (50 crosses above 200) is bullish. A death cross is bearish.
+Volume confirms price moves. High volume on a breakout is bullish. Low volume on a rally is suspicious.
+Support is a price level where buying pressure exceeds selling. Resistance is where selling exceeds buying.
+Bollinger Bands measure volatility. Price touching the upper band suggests overbought. Lower band suggests oversold.
+The P/E ratio compares stock price to earnings. High P/E means the market expects high growth. Low P/E may indicate undervaluation.
+EPS measures company profitability. Growing EPS quarter over quarter is bullish.
+Revenue growth is a key fundamental metric. Consistent double-digit growth is considered strong for tech companies.
+Debt to equity ratio measures financial leverage. High D/E can indicate risk especially in rising rate environments.
+Free cash flow is cash a company generates after capital expenditures. Strong FCF allows buybacks, dividends, and acquisitions.
+Market cap classifies company size. Large cap over 10B, mid cap 2-10B, small cap 300M-2B.
+Beta measures volatility relative to the market. Beta above 1 means more volatile than the market.
+Diversification reduces portfolio risk by spreading across sectors and asset classes.
+Dollar cost averaging means investing fixed amounts regularly regardless of price.
+A bull market is a sustained rise of 20% or more. A bear market is a sustained decline of 20% or more.
+Options give the right but not obligation to buy or sell at a specific price. Calls are bullish, puts are bearish.
+Short selling involves borrowing shares and selling them hoping to buy back cheaper.
+Technical analysis uses price charts and indicators to predict future price movements.
+Fundamental analysis evaluates a company's financial health and intrinsic value.
+Candlestick patterns like doji, hammer, and engulfing patterns signal potential reversals.
+The Fibonacci retracement levels 38.2%, 50%, and 61.8% are key support and resistance zones.
+Average True Range (ATR) measures market volatility. High ATR means larger price swings.
+The VIX index measures market fear. Above 30 signals high fear. Below 20 signals complacency.
+Stop loss orders automatically sell a position when it hits a predetermined price to limit losses.
+
+SWING TRADING - MULTI-MONTH MOVES (3 months to 2 years)
+Swing trading targets large directional moves over weeks to months, not day-to-day noise.
+The best swing trades combine a strong fundamental catalyst with a technical setup - the catalyst drives the move, the technical setup gives you the entry.
+A stage 2 breakout occurs when a stock breaks above a long base on high volume after a period of accumulation. This is the highest probability swing trade setup.
+Relative strength is the most important swing trading indicator. Stocks that hold up during market selloffs and break out first during recoveries tend to make the biggest moves.
+Cup and handle patterns on weekly charts are among the most reliable swing trade setups for 3-12 month moves.
+The weekly chart is the primary timeframe for swing trades. Daily charts are used for entry timing only.
+
+HOT SECTORS AND CATALYSTS
+AI infrastructure is the dominant theme - companies providing compute (NVIDIA, AMD), cloud (AWS, Azure, GCP), and data infrastructure are direct beneficiaries.
+Semiconductor equipment is a bottleneck for AI expansion. ASML, Applied Materials, and Lam Research control critical steps in chip manufacturing.
+Power and energy infrastructure is a critical bottleneck for AI data centers. Utilities, natural gas, and nuclear energy companies benefit from surging data center power demand.
+Cybersecurity spending is accelerating as AI expands attack surfaces. Zero trust architecture companies see growing enterprise demand.
+GLP-1 weight loss drugs are creating ripple effects - companies in drug delivery, medical devices, and food are all impacted.
+Defense and aerospace benefit from rising geopolitical tensions and government spending cycles.
+Reshoring of manufacturing creates multi-year tailwinds for industrial automation, robotics, and domestic manufacturing.
+Healthcare AI is early stage but growing - companies applying AI to drug discovery, diagnostics, and clinical workflow automation.
+Space economy is expanding - satellite internet, launch services, and space-based data collection are multi-year growth themes.
+
+SECTOR BOTTLENECKS
+AI compute bottleneck: NVIDIA H100/H200 GPUs have 12+ month lead times.
+Power grid bottleneck: US power grid cannot support projected data center growth. Utilities, transformer manufacturers, and nuclear energy companies benefit.
+Semiconductor advanced packaging bottleneck: CoWoS packaging from TSMC is constrained.
+Cooling technology bottleneck: Traditional air cooling cannot handle next-gen GPU heat density. Liquid cooling companies are beneficiaries.
+Rare earth minerals bottleneck: EV batteries and defense systems require rare earth elements. Companies with domestic rare earth supply chains have strategic value.
+
+SIGNALS FOR BIG MOVES
+Government contract wins are major catalysts for defense, IT services, and cloud companies.
+Hyperscaler capex announcements directly signal demand for AI infrastructure suppliers.
+Drug approval catalysts (FDA PDUFA dates) create binary events for biotech stocks.
+Partnership announcements between large enterprises and AI companies validate technology.
+Index inclusion (S&P 500 or Russell 2000 additions) forces passive fund buying.
+Share buyback announcements signal management confidence and reduce float.
+Insider buying clusters - when multiple executives buy shares simultaneously - is one of the strongest bullish signals.
+Earnings estimate revisions upward by Wall Street analysts precede institutional buying.
+
+SWING TRADE SETUP CHECKLIST
+Strong relative strength vs S&P 500 over last 3-6 months.
+Consolidating near 52-week highs, not near lows.
+Identifiable fundamental catalyst - new product, contract win, sector tailwind.
+Increasing institutional ownership quarter over quarter.
+Revenue acceleration - growth rate increasing, not just growing.
+Tight price action (low ATR) in the base before breakout.
+Volume dry up during consolidation followed by volume expansion on breakout.
+Short interest above 10% - potential for short squeeze amplifying the move.
+Sector in favor with market - swimming with the tide not against it.
+Clear price target based on measured move from the base pattern.
+
+NEWS AND SENTIMENT SIGNALS
+Earnings surprises of 20%+ with raised guidance are the most reliable catalyst for sustained multi-month moves.
+Management guidance language matters - words like accelerating, unprecedented demand, supply constrained signal a stock about to move.
+Short squeeze conditions: high short interest plus positive catalyst equals explosive upside.
+Analyst upgrades with significant price target increases attract institutional attention.
+Viral product launches or consumer adoption data can reprice a stock's growth multiple overnight.
+Regulatory approvals remove binary risk and unlock institutional buying.
+Strategic acquisitions at premiums reveal sector valuations.
