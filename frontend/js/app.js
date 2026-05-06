@@ -1,5 +1,5 @@
 const SESSION_ID = 'trader_' + Math.random().toString(36).substr(2, 9);
-const API_URL = 'http://127.0.0.1:8000/analyze';
+const API_URL = 'https://tradesense-ai-production-22d9.up.railway.app/analyze';
 let queryCount = 0;
 
 document.getElementById('session-display').textContent = SESSION_ID;
